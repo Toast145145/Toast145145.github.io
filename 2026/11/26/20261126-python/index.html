@@ -6,17 +6,20 @@
   
   <title>20261126  python | Toast 的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="python有关内容1.函数解释：以def开头后加上变量名，再以：结尾且第二行要进行缩进**** ​            是因为需要多次使用相同的运算过程，为了加快速度，发明了函数 注意：1.def max(a,b):结尾不要忘了： ​            2.第二行注意要缩进 ​			3.介于”\images\20261126.png” ​			我用人话来讲述：return可以将函数作废，然">
+  <meta name="description" content="python有关内容1.函数解释：以def开头后加上变量名，再以：结尾且第二行要进行缩进**** ​            是因为需要多次使用相同的运算过程，为了加快速度，发明了函数 注意：1.def max(a,b):结尾不要忘了： ​            2.第二行注意要缩进  介于：   ​			我用人话来讲述：return可以将函数作废，然后将自己后面的元素注入到定义的函数值里面（这比p">
 <meta property="og:type" content="article">
 <meta property="og:title" content="20261126  python">
 <meta property="og:url" content="https://toast145145.github.io/2026/11/26/20261126-python/index.html">
 <meta property="og:site_name" content="Toast 的博客">
-<meta property="og:description" content="python有关内容1.函数解释：以def开头后加上变量名，再以：结尾且第二行要进行缩进**** ​            是因为需要多次使用相同的运算过程，为了加快速度，发明了函数 注意：1.def max(a,b):结尾不要忘了： ​            2.第二行注意要缩进 ​			3.介于”\images\20261126.png” ​			我用人话来讲述：return可以将函数作废，然">
+<meta property="og:description" content="python有关内容1.函数解释：以def开头后加上变量名，再以：结尾且第二行要进行缩进**** ​            是因为需要多次使用相同的运算过程，为了加快速度，发明了函数 注意：1.def max(a,b):结尾不要忘了： ​            2.第二行注意要缩进  介于：   ​			我用人话来讲述：return可以将函数作废，然后将自己后面的元素注入到定义的函数值里面（这比p">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://toast145145.github.io/images/20261126.png">
+<meta property="og:image" content="https://toast145145.github.io/images/20261126-2.png">
 <meta property="article:published_time" content="2026-11-26T13:30:38.000Z">
-<meta property="article:modified_time" content="2026-11-26T14:25:45.185Z">
+<meta property="article:modified_time" content="2026-11-27T13:27:55.601Z">
 <meta property="article:author" content="Toast145145">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://toast145145.github.io/images/20261126.png">
   
     <link rel="alternate" href="/atom.xml" title="Toast 的博客" type="application/atom+xml">
   
@@ -103,14 +106,20 @@
 <p>​            是因为需要多次使用相同的运算过程，为了加快速度，发明了函数</p>
 <p>注意：1.<code>def max(a,b):</code>结尾不要忘了<u>：</u></p>
 <p>​            2.第二行注意要缩进</p>
-<p>​			3.介于”\images\20261126.png”</p>
+<ol start="3">
+<li>介于：</li>
+</ol>
+<p><img src="/images/20261126.png" alt="函数说明"></p>
 <p>​			我用人话来讲述：return可以将函数作废，然后将自己后面的元素注入到定义的函数值里面（这比print()更厉害print是输入到桌面上，而return是输入到函数里）</p>
 <p>​			return还可以通过嵌套实现循环，来实现层级相加</p>
 <p>​        </p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">def fact(n):</span><br><span class="line">    if n == 1:</span><br><span class="line">        return 1   # 基线：返回1，停止往下递归</span><br><span class="line">    return n * fact(n - 1) # 把下层return回来的值拿来计算</span><br><span class="line"></span><br><span class="line">print(fact(5))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p>通过 return n * fact(n - 1)将fact (5) → return 5 * fact (4) fact (4) → return 4 * fact (3) fact (3) → return 3 * fact (2) fact (2) → return 2 * fact (1) fact (1) → return 1  # 递归基线，不再继续往下调用</p>
-<p>​				4.看例题”\images\20261126(2).png”</p>
+<ol start="4">
+<li>看例题：</li>
+</ol>
+<p><img src="/images/20261126-2.png" alt="递归例题"></p>
 <p>​					其实递归函数就是运用循环（自己的函数）加return的终止条件让函数更加细腻</p>
 <h2 id="2-匿名函数"><a href="#2-匿名函数" class="headerlink" title="2.匿名函数"></a>2.匿名函数</h2><p>​	1.解释：就是def的简化版，通过</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lambda arguments: expression</span><br></pre></td></tr></table></figure>
@@ -127,7 +136,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://toast145145.github.io/2026/11/26/20261126-python/" data-id="cmwxnaoiq0003jcth491b77dz" data-title="20261126  python" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://toast145145.github.io/2026/11/26/20261126-python/" data-id="cmwz0om500002rothfkqf4mw9" data-title="20261126  python" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -136,6 +145,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2026/11/27/20261127/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          20261127
+        
+      </div>
+    </a>
   
   
     <a href="/2026/11/25/20261125/" id="article-nav-older" class="article-nav-link-wrap">
@@ -197,6 +215,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2026/11/27/20261127/">20261127</a>
+          </li>
         
           <li>
             <a href="/2026/11/26/20261126-python/">20261126  python</a>

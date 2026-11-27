@@ -77,6 +77,44 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-20261127" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/11/27/20261127/" class="article-date">
+  <time class="dt-published" datetime="2026-11-27T08:11:28.000Z" itemprop="datePublished">2026-11-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2026/11/27/20261127/">20261127</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://toast145145.github.io/2026/11/27/20261127/" data-id="cmwz0om520004rothh5ntcafv" data-title="20261127" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-20261126-python" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2026/11/26/20261126-python/" class="article-date">
@@ -103,14 +141,20 @@
 <p>​            是因为需要多次使用相同的运算过程，为了加快速度，发明了函数</p>
 <p>注意：1.<code>def max(a,b):</code>结尾不要忘了<u>：</u></p>
 <p>​            2.第二行注意要缩进</p>
-<p>​			3.介于”\images\20261126.png”</p>
+<ol start="3">
+<li>介于：</li>
+</ol>
+<p><img src="/images/20261126.png" alt="函数说明"></p>
 <p>​			我用人话来讲述：return可以将函数作废，然后将自己后面的元素注入到定义的函数值里面（这比print()更厉害print是输入到桌面上，而return是输入到函数里）</p>
 <p>​			return还可以通过嵌套实现循环，来实现层级相加</p>
 <p>​        </p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">def fact(n):</span><br><span class="line">    if n == 1:</span><br><span class="line">        return 1   # 基线：返回1，停止往下递归</span><br><span class="line">    return n * fact(n - 1) # 把下层return回来的值拿来计算</span><br><span class="line"></span><br><span class="line">print(fact(5))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p>通过 return n * fact(n - 1)将fact (5) → return 5 * fact (4) fact (4) → return 4 * fact (3) fact (3) → return 3 * fact (2) fact (2) → return 2 * fact (1) fact (1) → return 1  # 递归基线，不再继续往下调用</p>
-<p>​				4.看例题”\images\20261126(2).png”</p>
+<ol start="4">
+<li>看例题：</li>
+</ol>
+<p><img src="/images/20261126-2.png" alt="递归例题"></p>
 <p>​					其实递归函数就是运用循环（自己的函数）加return的终止条件让函数更加细腻</p>
 <h2 id="2-匿名函数"><a href="#2-匿名函数" class="headerlink" title="2.匿名函数"></a>2.匿名函数</h2><p>​	1.解释：就是def的简化版，通过</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lambda arguments: expression</span><br></pre></td></tr></table></figure>
@@ -127,7 +171,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://toast145145.github.io/2026/11/26/20261126-python/" data-id="cmwxnaoiq0003jcth491b77dz" data-title="20261126  python" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://toast145145.github.io/2026/11/26/20261126-python/" data-id="cmwz0om500002rothfkqf4mw9" data-title="20261126  python" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -171,14 +215,14 @@
 <p>​                  len()获得长度        </p>
 <h3 id="2-条件控制"><a href="#2-条件控制" class="headerlink" title="2.条件控制"></a>2.条件控制</h3><h6 id="if-可以用-case代替，最后一个要用case-对了，还要加上match-subject"><a href="#if-可以用-case代替，最后一个要用case-对了，还要加上match-subject" class="headerlink" title="if 可以用    case代替，最后一个要用case_#对了，还要加上match subject"></a>if 可以用    case代替，最后一个要用case_#对了，还要加上match subject</h6><p>if的嵌套是用空几格来显示的</p>
 <h3 id="3-循环语句"><a href="#3-循环语句" class="headerlink" title="3.循环语句"></a>3.循环语句</h3><h5 id="for和while的比较：对于集合类的优先选择for代码更少"><a href="#for和while的比较：对于集合类的优先选择for代码更少" class="headerlink" title="for和while的比较：对于集合类的优先选择for代码更少"></a>for和while的比较：对于集合类的优先选择for代码更少</h5><p>break和continue：前者直接跳过目前的循环，后者是跳过后面的部分，再进行循环</p>
-<h3 id="4-编程第一步"><a href="#4-编程第一步" class="headerlink" title="4.编程第一步"></a>4.编程第一步</h3><p><img src="/%22%5Cimages%5Cpython-notes-221528.png%22" alt="屏幕截图 2026-11-25 221528"></p>
+<h3 id="4-编程第一步"><a href="#4-编程第一步" class="headerlink" title="4.编程第一步"></a>4.编程第一步</h3><p><img src="/images/python-notes-221528.png" alt="屏幕截图 2026-11-25 221528"></p>
 <p>​            </p>
 <p>a, b &#x3D; b, a+b  #这是将a变b，b变a+b</p>
 <h3 id="5-Python-推导式"><a href="#5-Python-推导式" class="headerlink" title="5.Python 推导式"></a>5.Python 推导式</h3><h5 id="基本都是-前面是不同类型不同形式-for-in-if"><a href="#基本都是-前面是不同类型不同形式-for-in-if" class="headerlink" title="基本都是 #前面是不同类型不同形式#   for      in      if"></a>基本都是 #前面是不同类型不同形式#   for      in      if</h5>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://toast145145.github.io/2026/11/25/20261125/" data-id="cmwxnaoio0001jcth6ni171g1" data-title="20261125" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://toast145145.github.io/2026/11/25/20261125/" data-id="cmwz0om4x0001roth83pg49ce" data-title="20261125" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -229,7 +273,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://toast145145.github.io/2026/11/24/hello-world/" data-id="cmwxnaoip0002jcthf2njb54v" data-title="Hello World" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://toast145145.github.io/2026/11/24/hello-world/" data-id="cmwz0om510003roth90nx2xj3" data-title="Hello World" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -277,7 +321,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://toast145145.github.io/2025/11/25/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" data-id="cmwxnaoiq0004jcth19rk0598" data-title="我的第一篇博客" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://toast145145.github.io/2025/11/25/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" data-id="cmwz0om520005rothdjpv45dv" data-title="我的第一篇博客" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -341,6 +385,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2026/11/27/20261127/">20261127</a>
+          </li>
         
           <li>
             <a href="/2026/11/26/20261126-python/">20261126  python</a>
